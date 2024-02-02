@@ -1,4 +1,4 @@
-package com.sinensia.pollosfelices.backend.presentation.controllers;
+package com.sinensia.pollosalegres.backend.presentation.controllers;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.doThrow;

@@ -1,4 +1,4 @@
-package com.sinensia.pollosfelices.backend.presentation.controllers;
+package com.sinensia.pollosalegres.backend.presentation.controllers;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.doThrow;
@@ -31,7 +31,6 @@ import com.sinensia.pollosalegres.backend.business.model.Categoria;
 import com.sinensia.pollosalegres.backend.business.model.Producto;
 import com.sinensia.pollosalegres.backend.business.services.ProductoServices;
 import com.sinensia.pollosalegres.backend.presentation.config.RespuestaError;
-import com.sinensia.pollosalegres.backend.presentation.controllers.ProductoController;
 
 @WebMvcTest(value = ProductoController.class)
 class ProductoControllerTest {

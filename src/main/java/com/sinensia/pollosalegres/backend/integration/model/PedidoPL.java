@@ -13,6 +13,7 @@ import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Inheritance;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
@@ -21,6 +22,7 @@ import jakarta.persistence.TemporalType;
 
 @Entity
 @Table(name="PEDIDOS")
+
 public class PedidoPL implements Serializable {
 	
 	@Id
@@ -46,7 +48,7 @@ public class PedidoPL implements Serializable {
 	@Enumerated(EnumType.STRING)
 	private EstadoPedidoPL estado;
 	
-	@ElementCollection(fetch = FetchType.LAZY)
+	@ElementCollection(fetch = FetchType.EAGER)
 	@CollectionTable(name="LINEAS_PEDIDO", joinColumns=@JoinColumn(name="CODIGO_PEDIDO"))
 	private List<LineaPedidoPL> lineas;
 	
